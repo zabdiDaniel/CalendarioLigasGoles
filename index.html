@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Ligas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calendario de Ligas</h1>
+    <div class="tabs">
+        <button class="tab" data-league="Bundesliga">Bundesliga</button>
+        <button class="tab" data-league="Eredivisie">Eredivisie</button>
+        <button class="tab" data-league="LigaMX">Liga MX</button>
+        <button class="tab" data-league="JupilerPro-Belgica">JupilerPro-Belgica</button>
+        <button class="tab" data-league="MLS">MLS</button>
+        <button class="tab" data-league="PremierLeague">PremierLeague</button>
+        <button class="tab" data-league="ScottishPremiership">ScottishPremiership</button>
+        <button class="tab" data-league="Singapur-Premier">Singapur-Premier"</button>
+        <button class="tab" data-league="SuperLeague-Turquia">SuperLeague-Turquia</button>
+
+    </div>
+    <div class="filters">
+        <button id="todayBtn">Hoy</button>
+        <button id="tomorrowBtn">Mañana</button>
+        <button id="nextBtn">Próximos</button>
+        <button id="allBtn">Todos</button>
+
+    </div>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los resultados se llenarán aquí dinámicamente -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

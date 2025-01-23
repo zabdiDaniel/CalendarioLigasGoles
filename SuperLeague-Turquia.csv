@@ -1,0 +1,118 @@
+Local,Visitante,Fecha,Hora
+Samsunspor,Gaziantep,24.01.,11:00
+Sivasspor,Kayserispor,25.01.,04:30
+Alanyaspor,Başakşehir,25.01.,07:00
+Galatasaray,Konyaspor,25.01.,10:00
+Rizespor,Adana Demirspor,26.01.,04:30
+Antalyaspor,Beşiktaş,26.01.,07:00
+Bodrumspor,Eyupspor,26.01.,07:00
+Fenerbahçe,Göztepe,26.01.,10:00
+Kasimpasa,Hatayspor,27.01.,11:00
+Eyupspor,Sivasspor,31.01.,11:00
+Konyaspor,Bodrumspor,31.01.,11:00
+Hatayspor,Antalyaspor,01.02.,04:30
+Kayserispor,Trabzonspor,01.02.,07:00
+Başakşehir,Samsunspor,01.02.,10:00
+Adana Demirspor,Kasimpasa,02.02.,04:30
+Göztepe,Alanyaspor,02.02.,07:00
+Fenerbahçe,Rizespor,02.02.,10:00
+Gaziantep,Galatasaray,03.02.,11:00
+Alanyaspor,Fenerbahçe,09.02.,12:00
+Antalyaspor,Başakşehir,09.02.,12:00
+Bodrumspor,Göztepe,09.02.,12:00
+Galatasaray,Adana Demirspor,09.02.,12:00
+Kasimpasa,Rizespor,09.02.,12:00
+Kayserispor,Konyaspor,09.02.,12:00
+Samsunspor,Hatayspor,09.02.,12:00
+Sivasspor,Beşiktaş,09.02.,12:00
+Trabzonspor,Eyupspor,09.02.,12:00
+Adana Demirspor,Antalyaspor,16.02.,12:00
+Başakşehir,Bodrumspor,16.02.,12:00
+Beşiktaş,Trabzonspor,16.02.,12:00
+Eyupspor,Kayserispor,16.02.,12:00
+Fenerbahçe,Kasimpasa,16.02.,12:00
+Gaziantep,Sivasspor,16.02.,12:00
+Hatayspor,Alanyaspor,16.02.,12:00
+Konyaspor,Samsunspor,16.02.,12:00
+Rizespor,Galatasaray,16.02.,12:00
+Alanyaspor,Adana Demirspor,23.02.,12:00
+Antalyaspor,Kasimpasa,23.02.,12:00
+Bodrumspor,Hatayspor,23.02.,12:00
+Eyupspor,Beşiktaş,23.02.,12:00
+Galatasaray,Fenerbahçe,23.02.,12:00
+Kayserispor,Göztepe,23.02.,12:00
+Samsunspor,Rizespor,23.02.,12:00
+Sivasspor,Konyaspor,23.02.,12:00
+Trabzonspor,Gaziantep,23.02.,12:00
+Adana Demirspor,Bodrumspor,02.03.,12:00
+Başakşehir,Sivasspor,02.03.,12:00
+Beşiktaş,Kayserispor,02.03.,12:00
+Fenerbahçe,Antalyaspor,02.03.,12:00
+Gaziantep,Eyupspor,02.03.,12:00
+Göztepe,Samsunspor,02.03.,12:00
+Kasimpasa,Galatasaray,02.03.,12:00
+Konyaspor,Trabzonspor,02.03.,12:00
+Rizespor,Alanyaspor,02.03.,12:00
+Alanyaspor,Galatasaray,09.03.,12:00
+Antalyaspor,Rizespor,09.03.,12:00
+Beşiktaş,Gaziantep,09.03.,12:00
+Bodrumspor,Kasimpasa,09.03.,12:00
+Eyupspor,Konyaspor,09.03.,12:00
+Kayserispor,Başakşehir,09.03.,12:00
+Samsunspor,Adana Demirspor,09.03.,12:00
+Sivasspor,Göztepe,09.03.,12:00
+Trabzonspor,Hatayspor,09.03.,12:00
+Başakşehir,Trabzonspor,16.03.,12:00
+Fenerbahçe,Samsunspor,16.03.,12:00
+Galatasaray,Antalyaspor,16.03.,12:00
+Gaziantep,Kayserispor,16.03.,12:00
+Göztepe,Eyupspor,16.03.,12:00
+Hatayspor,Sivasspor,16.03.,12:00
+Kasimpasa,Alanyaspor,16.03.,12:00
+Konyaspor,Beşiktaş,16.03.,12:00
+Rizespor,Bodrumspor,16.03.,12:00
+Antalyaspor,Alanyaspor,30.03.,11:00
+Beşiktaş,Galatasaray,30.03.,11:00
+Bodrumspor,Fenerbahçe,30.03.,11:00
+Eyupspor,Başakşehir,30.03.,11:00
+Kayserispor,Hatayspor,30.03.,11:00
+Konyaspor,Gaziantep,30.03.,11:00
+Samsunspor,Kasimpasa,30.03.,11:00
+Sivasspor,Adana Demirspor,30.03.,11:00
+Trabzonspor,Göztepe,30.03.,11:00
+Adana Demirspor,Kayserispor,06.04.,11:00
+Alanyaspor,Bodrumspor,06.04.,11:00
+Antalyaspor,Samsunspor,06.04.,11:00
+Başakşehir,Konyaspor,06.04.,11:00
+Fenerbahçe,Trabzonspor,06.04.,11:00
+Göztepe,Gaziantep,06.04.,11:00
+Hatayspor,Eyupspor,06.04.,11:00
+Kasimpasa,Beşiktaş,06.04.,11:00
+Rizespor,Sivasspor,06.04.,11:00
+Beşiktaş,Başakşehir,13.04.,11:00
+Bodrumspor,Antalyaspor,13.04.,11:00
+Eyupspor,Adana Demirspor,13.04.,11:00
+Gaziantep,Hatayspor,13.04.,11:00
+Kayserispor,Kasimpasa,13.04.,11:00
+Konyaspor,Göztepe,13.04.,11:00
+Samsunspor,Galatasaray,13.04.,11:00
+Sivasspor,Fenerbahçe,13.04.,11:00
+Trabzonspor,Rizespor,13.04.,11:00
+Adana Demirspor,Trabzonspor,20.04.,11:00
+Alanyaspor,Samsunspor,20.04.,11:00
+Başakşehir,Gaziantep,20.04.,11:00
+Fenerbahçe,Kayserispor,20.04.,11:00
+Galatasaray,Bodrumspor,20.04.,11:00
+Göztepe,Beşiktaş,20.04.,11:00
+Hatayspor,Konyaspor,20.04.,11:00
+Kasimpasa,Sivasspor,20.04.,11:00
+Rizespor,Eyupspor,20.04.,11:00
+Beşiktaş,Hatayspor,27.04.,11:00
+Bodrumspor,Samsunspor,27.04.,11:00
+Eyupspor,Galatasaray,27.04.,11:00
+Gaziantep,Fenerbahçe,27.04.,11:00
+Göztepe,Başakşehir,27.04.,11:00
+Kayserispor,Rizespor,27.04.,11:00
+Konyaspor,Adana Demirspor,27.04.,11:00
+Sivasspor,Antalyaspor,27.04.,11:00
+Trabzonspor,Alanyaspor,27.04.,11:00

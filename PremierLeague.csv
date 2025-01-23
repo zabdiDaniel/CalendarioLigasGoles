@@ -1,0 +1,112 @@
+Local,Visitante,Fecha,Hora
+Bournemouth,Nottingham Forest,25.01.,09:00
+Brighton,Everton,25.01.,09:00
+Liverpool,Ipswich,25.01.,09:00
+Southampton,Newcastle,25.01.,09:00
+Wolves,Arsenal,25.01.,09:00
+Manchester City,Chelsea,25.01.,11:30
+Crystal Palace,Brentford,26.01.,08:00
+Tottenham,Leicester,26.01.,08:00
+Aston Villa,West Ham,26.01.,10:30
+Fulham,Manchester Utd,26.01.,13:00
+Nottingham Forest,Brighton,01.02.,06:30
+Bournemouth,Liverpool,01.02.,09:00
+Everton,Leicester,01.02.,09:00
+Ipswich,Southampton,01.02.,09:00
+Newcastle,Fulham,01.02.,09:00
+Wolves,Aston Villa,01.02.,11:30
+Brentford,Tottenham,02.02.,08:00
+Manchester Utd,Crystal Palace,02.02.,08:00
+Arsenal,Manchester City,02.02.,10:30
+Chelsea,West Ham,03.02.,14:00
+Everton,Liverpool,12.02.,13:30
+Brighton,Chelsea,14.02.,14:00
+Leicester,Arsenal,15.02.,06:30
+Aston Villa,Ipswich,15.02.,09:00
+Fulham,Nottingham Forest,15.02.,09:00
+Manchester City,Newcastle,15.02.,09:00
+Southampton,Bournemouth,15.02.,09:00
+West Ham,Brentford,15.02.,09:00
+Crystal Palace,Everton,15.02.,11:30
+Liverpool,Wolves,16.02.,08:00
+Tottenham,Manchester Utd,16.02.,10:30
+Leicester,Brentford,21.02.,14:00
+Everton,Manchester Utd,22.02.,06:30
+Arsenal,West Ham,22.02.,09:00
+Bournemouth,Wolves,22.02.,09:00
+Fulham,Crystal Palace,22.02.,09:00
+Ipswich,Tottenham,22.02.,09:00
+Southampton,Brighton,22.02.,09:00
+Aston Villa,Chelsea,22.02.,11:30
+Newcastle,Nottingham Forest,23.02.,08:00
+Manchester City,Liverpool,23.02.,10:30
+Brighton,Bournemouth,25.02.,13:30
+Crystal Palace,Aston Villa,25.02.,13:30
+Wolves,Fulham,25.02.,13:30
+Chelsea,Southampton,25.02.,14:15
+Brentford,Everton,26.02.,13:30
+Manchester Utd,Ipswich,26.02.,13:30
+Nottingham Forest,Arsenal,26.02.,13:30
+Tottenham,Manchester City,26.02.,13:30
+Liverpool,Newcastle,26.02.,14:15
+West Ham,Leicester,27.02.,14:00
+Brentford,Aston Villa,08.03.,09:00
+Brighton,Fulham,08.03.,09:00
+Chelsea,Leicester,08.03.,09:00
+Crystal Palace,Ipswich,08.03.,09:00
+Liverpool,Southampton,08.03.,09:00
+Manchester Utd,Arsenal,08.03.,09:00
+Nottingham Forest,Manchester City,08.03.,09:00
+Tottenham,Bournemouth,08.03.,09:00
+West Ham,Newcastle,08.03.,09:00
+Wolves,Everton,08.03.,09:00
+Arsenal,Chelsea,15.03.,09:00
+Aston Villa,Liverpool,15.03.,09:00
+Bournemouth,Brentford,15.03.,09:00
+Everton,West Ham,15.03.,09:00
+Fulham,Tottenham,15.03.,09:00
+Ipswich,Nottingham Forest,15.03.,09:00
+Leicester,Manchester Utd,15.03.,09:00
+Manchester City,Brighton,15.03.,09:00
+Newcastle,Crystal Palace,15.03.,09:00
+Southampton,Wolves,15.03.,09:00
+Arsenal,Fulham,01.04.,12:45
+Bournemouth,Ipswich,01.04.,12:45
+Brighton,Aston Villa,01.04.,12:45
+Nottingham Forest,Manchester Utd,01.04.,12:45
+Wolves,West Ham,01.04.,12:45
+Chelsea,Tottenham,02.04.,12:45
+Manchester City,Leicester,02.04.,12:45
+Newcastle,Brentford,02.04.,12:45
+Southampton,Crystal Palace,02.04.,12:45
+Liverpool,Everton,02.04.,13:00
+Aston Villa,Nottingham Forest,05.04.,08:00
+Brentford,Chelsea,05.04.,08:00
+Crystal Palace,Brighton,05.04.,08:00
+Everton,Arsenal,05.04.,08:00
+Fulham,Liverpool,05.04.,08:00
+Ipswich,Wolves,05.04.,08:00
+Leicester,Newcastle,05.04.,08:00
+Manchester Utd,Manchester City,05.04.,08:00
+Tottenham,Southampton,05.04.,08:00
+West Ham,Bournemouth,05.04.,08:00
+Arsenal,Brentford,12.04.,08:00
+Bournemouth,Fulham,12.04.,08:00
+Brighton,Leicester,12.04.,08:00
+Chelsea,Ipswich,12.04.,08:00
+Liverpool,West Ham,12.04.,08:00
+Manchester City,Crystal Palace,12.04.,08:00
+Newcastle,Manchester Utd,12.04.,08:00
+Nottingham Forest,Everton,12.04.,08:00
+Southampton,Aston Villa,12.04.,08:00
+Wolves,Tottenham,12.04.,08:00
+Aston Villa,Newcastle,19.04.,08:00
+Brentford,Brighton,19.04.,08:00
+Crystal Palace,Bournemouth,19.04.,08:00
+Everton,Manchester City,19.04.,08:00
+Fulham,Chelsea,19.04.,08:00
+Ipswich,Arsenal,19.04.,08:00
+Leicester,Liverpool,19.04.,08:00
+Manchester Utd,Wolves,19.04.,08:00
+Tottenham,Nottingham Forest,19.04.,08:00
+West Ham,Southampton,19.04.,08:00
