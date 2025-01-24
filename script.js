@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('todayBtn').addEventListener('click', showToday);
     document.getElementById('tomorrowBtn').addEventListener('click', showTomorrow);
-    document.getElementById('nextBtn').addEventListener('click', showNext);
     document.getElementById('allBtn').addEventListener('click', showAllGames);
 
     // Cargar la primera liga (Bundesliga) por defecto
@@ -36,25 +35,30 @@ function loadCSV(fileName, league) {
 
 function parseCSV(data, league) {
     const rows = data.split('\n');
-    const today = new Date();
+    const today = getFormattedDate(new Date()); // Formato 'YYYY-MM-DD'
+
     const leagueMatches = rows.slice(1).map(row => {
         const columns = row.split(',');
         if (columns.length >= 4) {
             const [local, visitante, fecha, hora] = columns.map(col => col?.trim() || '');
-            if (local && visitante && fecha && hora) {
-                const formattedDate = formatDate(fecha);
-                const matchDate = new Date(formattedDate);
-                if (matchDate >= today) {
-                    return { local, visitante, fecha: formattedDate, hora };
-                }
+            const formattedDate = formatDate(fecha);
+
+            // Incluimos los partidos cuya fecha es igual o posterior a hoy
+            if (formattedDate >= today) {
+                return { local, visitante, fecha: formattedDate, hora };
             }
         }
         return null;
     }).filter(match => match !== null);
-    
-    matches[league] = leagueMatches; // Almacena los partidos de cada liga
-    displayMatches(league, leagueMatches); // Mostrar los partidos de la liga cargada
+
+    matches[league] = leagueMatches; // Guardamos los partidos por liga
+    displayMatches(league, leagueMatches); // Mostramos los partidos cargados
 }
+
+
+
+
+
 
 function formatDate(dateString) {
     const parts = dateString.split('.');
@@ -66,6 +70,8 @@ function formatDate(dateString) {
     }
     return '';
 }
+
+
 
 function displayMatches(league, data) {
     const tableBody = document.getElementById('resultsTable').querySelector('tbody');
@@ -99,11 +105,7 @@ function showTomorrow() {
     displayMatchesForDate(tomorrowMatches);
 }
 
-function showNext() {
-    const today = new Date();
-    const nextMatches = getNextMatches(today, 5);
-    displayMatchesForDate(nextMatches);
-}
+
 
 function showAllGames() {
     const today = getFormattedDate(new Date()); // Obtener la fecha de hoy
