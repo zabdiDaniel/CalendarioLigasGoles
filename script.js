@@ -4,10 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('todayBtn').addEventListener('click', showToday);
     document.getElementById('tomorrowBtn').addEventListener('click', showTomorrow);
-    document.getElementById('allBtn').addEventListener('click', showAllGames);
 
-    // Cargar la primera liga (Bundesliga) por defecto
-    loadCSV('Bundesliga.csv');
     setActiveTab(tabs[0]); // Marca la primera pestaña como activa
 });
 
@@ -55,11 +52,6 @@ function parseCSV(data, league) {
     displayMatches(league, leagueMatches); // Mostramos los partidos cargados
 }
 
-
-
-
-
-
 function formatDate(dateString) {
     const parts = dateString.split('.');
     if (parts.length >= 2) {
@@ -71,55 +63,91 @@ function formatDate(dateString) {
     return '';
 }
 
-
-
 function displayMatches(league, data) {
     const tableBody = document.getElementById('resultsTable').querySelector('tbody');
     tableBody.innerHTML = '';
+
     if (data.length === 0) {
         tableBody.innerHTML = '<tr><td colspan="4">No hay partidos disponibles.</td></tr>';
         return;
     }
+
+    const now = new Date(); // Fecha y hora actual
+
+    const today = Intl.DateTimeFormat('en-CA', { timeZone: 'America/Mexico_City' }).format(now); // Fecha actual (YYYY-MM-DD)
+
     data.forEach(match => {
+        // Crear fecha y hora del partido
+        const matchTimeParts = match.hora.split(':'); // Dividir hora
+        const matchDateTime = new Date(`${match.fecha}T${match.hora}:00-06:00`); // Fecha completa en UTC-6
+
+        // Comparaciones detalladas
+        const isToday = match.fecha === today;
+        const isPast = isToday && matchDateTime.getTime() < now.getTime(); // Comparar tiempos
+        const isFuture = isToday && matchDateTime.getTime() > now.getTime(); // Comparar tiempos
+
+        // Determinar el color de la celda de hora
+        let cellStyle = 'transparent';
+        if (isToday) {
+            if (isPast) {
+                cellStyle = '#FFB6B6'; // Amarillo para partidos pasados
+            } else if (isFuture) {
+                cellStyle = 'lightgreen'; // Verde para partidos futuros
+            }
+        }
+
         const row = `<tr>
             <td>${match.local}</td>
             <td>${match.visitante}</td>
             <td>${match.fecha}</td>
-            <td>${match.hora}</td>
+            <td style="background-color: ${cellStyle};">${match.hora}</td>
         </tr>`;
         tableBody.innerHTML += row;
     });
 }
 
 function showToday() {
-    const today = getFormattedDate(new Date());
+    const now = new Date(); // Fecha y hora actual
+    const today = getFormattedDate(now); // Fecha actual en formato YYYY-MM-DD
+
+    // Obtener y ordenar partidos por hora
     const todayMatches = getAllMatchesForDate(today);
-    displayMatchesForDate(todayMatches);
+    todayMatches.sort((a, b) => {
+        const timeA = new Date(`${today}T${a.hora}:00-06:00`);
+        const timeB = new Date(`${today}T${b.hora}:00-06:00`);
+        return timeA - timeB; // Ordenar por hora ascendente
+    });
+
+    // Mostrar partidos con colores según su estado
+    displayMatchesForDate(todayMatches, now);
+}
+
+// Función para obtener los partidos de una fecha específica
+function getAllMatchesForDate(date) {
+    return matches.filter(match => match.fecha === date);
+}
+
+// Función para obtener la fecha en formato YYYY-MM-DD
+function getFormattedDate(date) {
+    return date.toISOString().split('T')[0];
 }
 
 function showTomorrow() {
     const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    const formattedTomorrow = getFormattedDate(tomorrow);
+    tomorrow.setDate(tomorrow.getDate() + 1); // Incrementa la fecha al día siguiente
+    const formattedTomorrow = getFormattedDate(tomorrow); // Formatea la fecha como YYYY-MM-DD
+
+    // Obtener y ordenar partidos por hora
     const tomorrowMatches = getAllMatchesForDate(formattedTomorrow);
+    tomorrowMatches.sort((a, b) => {
+        const timeA = new Date(`${formattedTomorrow}T${a.hora}:00-06:00`);
+        const timeB = new Date(`${formattedTomorrow}T${b.hora}:00-06:00`);
+        return timeA - timeB; // Ordenar por hora ascendente
+    });
+
+    // Mostrar los partidos ordenados
     displayMatchesForDate(tomorrowMatches);
 }
-
-
-
-function showAllGames() {
-    const today = getFormattedDate(new Date()); // Obtener la fecha de hoy
-    const tomorrow = getFormattedDate(new Date(new Date().setDate(new Date().getDate() + 1))); // Obtener la fecha de mañana
-
-    const allMatches = [
-        ...getAllMatchesForDate(today),   // Obtener los partidos de hoy
-        ...getAllMatchesForDate(tomorrow) // Obtener los partidos de mañana
-        
-    ];
-
-    displayMatchesForDate(allMatches); // Mostrar los partidos de hoy y mañana
-}
-
 
 function getAllMatchesForDate(date) {
     let matchesForDate = [];
